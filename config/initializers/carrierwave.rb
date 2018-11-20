@@ -3,7 +3,10 @@ if ENV["AWS_ACCESS_KEY_ID"] && ENV["AWS_SECRET_ACCESS_KEY"]
     options = {
       provider: "AWS",
       aws_access_key_id: ENV["AWS_ACCESS_KEY_ID"],
-      aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"]
+      aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"],
+      host: ENV["MINIO_HOST"],
+      endpoint: ENV["MINIO_ENDPOINT"],
+      path_style: true
     }
     options[:region] = ENV["AWS_S3_REGION"] if ENV["AWS_S3_REGION"]
     options[:host] = ENV["AWS_S3_HOST"] if ENV["AWS_S3_HOST"]
