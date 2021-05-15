@@ -59,6 +59,7 @@ gem "twitter-text"
 gem "uglifier"
 gem "unicode-emoji"
 gem "unicorn"
+gem "foreman"
 
 group :development do
   gem "benchmark-ips"
@@ -71,7 +72,6 @@ group :development do
   gem "listen"
   gem "silencer"
   gem "spring"
-  gem "foreman"
 end
 
 group :development, :test do
