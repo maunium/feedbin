@@ -67,6 +67,7 @@ gem "uglifier"
 gem "unicode-emoji"
 gem "unicorn"
 gem "jwt"
+gem "foreman"
 
 group :development do
   gem "benchmark-ips"
@@ -75,7 +76,6 @@ group :development do
   gem "htmlbeautifier"
   gem "listen"
   gem "silencer"
-  gem "foreman"
   # gem "ruby-debug-ide", require: false
   # gem "debase", "= 0.2.5.beta2", require: false
   # gem "solargraph", require: false
