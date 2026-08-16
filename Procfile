@@ -1,3 +1,5 @@
 feedbin_clock: bundle exec clockwork lib/clock.rb
-feedbin_jobs: LIBRATO_AUTORUN=1 SKIP_IMAGES=1 DB_POOL=10 bundle exec sidekiq --config config/sidekiq-development.yml
-feedbin_css: bin/rails tailwindcss:watch
+#feedbin_jobs: LIBRATO_AUTORUN=1 SKIP_IMAGES=1 DB_POOL=10 bundle exec sidekiq --config config/sidekiq-development.yml
+#feedbin_css: bin/rails tailwindcss:watch
+feedbin_jobs: SKIP_IMAGES=1 DB_POOL=10 bundle exec sidekiq --config config/sidekiq-development.yml
+web: bundle exec pitchfork -c config/pitchfork.rb -l 0.0.0.0:3000

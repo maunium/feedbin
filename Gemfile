@@ -76,6 +76,7 @@ gem "tailwindcss-rails", "< 4"
 gem "uglifier"
 gem "web-push"
 gem "autotuner"
+gem "foreman"
 
 group :development do
   gem "benchmark-ips"
@@ -85,7 +86,6 @@ group :development do
   gem "htmlbeautifier"
   gem "listen"
   gem "lookbook"
-  gem "foreman"
   gem "pry"
   gem "guard"
   gem "guard-minitest"
